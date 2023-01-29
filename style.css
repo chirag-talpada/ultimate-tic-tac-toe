@@ -107,3 +107,25 @@
   background-color: #ff000054;
   cursor: not-allowed;
 }
+
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --cell-size: 150px;
+    --cell-inner-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  :root {
+    --cell-size: 120px;
+    --cell-inner-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  :root {
+    --cell-size: 100px;
+    --cell-inner-size: 20px;
+  }
+}
