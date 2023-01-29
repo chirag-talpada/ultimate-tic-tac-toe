@@ -59,22 +59,32 @@ outerBoard.addEventListener("click", function (e) {
   if (turn) {
     let randomCell = hasMark(acticatedCell);
 
-    if (randomCell || !selectionFlag) {
-      removeClasses();
-      selectionFlag = false;
-    } else {
+    // if (randomCell || !selectionFlag) {
+    //   removeClasses();
+    //   selectionFlag = false;
+    // } else {
+    //   highlightedActivatedCell(acticatedCell, currentClass);
+    //   selectionFlag = true;
+    // }
+
+    removeClasses();
+    if (!randomCell) {
       highlightedActivatedCell(acticatedCell, currentClass);
-      selectionFlag = true;
     }
   }
 
   if (!turn) {
     let randomCell = hasMark(acticatedCell);
 
-    if (selectionFlag || randomCell) {
-      selectionFlag = true;
-      removeClasses();
-    } else {
+    // if (selectionFlag || randomCell) {
+    //   selectionFlag = true;
+    //   removeClasses();
+    // } else {
+    //   highlightedActivatedCell(acticatedCell, currentClass);
+    // }
+    
+    removeClasses();
+    if (!randomCell) {
       highlightedActivatedCell(acticatedCell, currentClass);
     }
   }
@@ -89,6 +99,9 @@ outerBoard.addEventListener("click", function (e) {
   if (result) {
     putMark(clikedCell, currentClass);
     checkOuterWin(currentClass);
+     if (clikedCell === acticatedCell) {
+      removeClasses();
+    }
   } else if (innerDrawResult) {
     putDraw(clikedCell);
   }
