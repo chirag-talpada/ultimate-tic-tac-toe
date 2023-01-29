@@ -111,6 +111,7 @@ outerBoard.addEventListener("click", function (e) {
 
   if (outerDrawResult) {
     alert("draw");
+    window.location.reload();
   }
 
   turn = !turn;
@@ -214,6 +215,7 @@ function checkOuterWin(currentClass) {
 
   if (res) {
     alert(player + " Won the Game");
+    window.location.reload();
   }
 }
 
