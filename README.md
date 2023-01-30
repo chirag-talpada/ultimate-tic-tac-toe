@@ -10,6 +10,8 @@ Ultimate tic-tac-toe is variation and more strategic version of Tic Tac Toe whic
 - The square is conquered by the player that achieves the 3 in a row for that particular small tic tac toe.
 - Should a draw be achieved in that small tic tac toe, that square is considered wasted and remains at a draw. 
 
+## Live Demo: https://chirag-talpada.github.io/ultimate-tic-tac-toe/
+
 ![image](https://user-images.githubusercontent.com/99867142/215320981-c3266748-cd18-40e2-835c-cfc64f431360.png)
 ![image](https://user-images.githubusercontent.com/99867142/215320996-04e93c09-50a0-426b-8596-bf40848dc3cb.png)
 
